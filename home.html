@@ -1,0 +1,157 @@
+<html>
+    <head>
+        <title>SuperThrones</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="photos/favicon.ico" type="image/x-icon">
+    </head>
+    <body style="background-color: black;" >
+        <div >
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html">
+                    <img src="photos/favicon.ico" alt="logo" width="30" height="40">  
+                    SuperThrones</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav"  >
+                      <a class="nav-link active" aria-current="page" href="#m1">Movies</a>
+                      <a class="nav-link" href="#s1">Series</a>
+                      <a class="nav-link" href="#b1">Books</a>
+                      <button type="button" class="btn btn-outline-primary add-button" onclick="alert(items)">VIEW LIST</button>
+
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </div>
+        
+
+        <div id="m1" style="width: 100%;">
+            <h1>Popular Movies</h1>
+            <div class="movie-item">
+                <img src="photos/movies/baahubali-1.jpg" alt="baahubali-1" width="60px">
+                <h5 style="display: inline-block;">1.Baahubali-The Beginning</h5> 
+                <a href="https://www.imdb.com/title/tt2631186/?ref_=nv_sr_srsg_0">IMDB</a>
+                <button type="button" class="btn btn-outline-primary add-button" onclick="addToList(this.value)" value="MOVIES/Baahubali-The Beginning">ADD TO LIST</button>
+            </div>
+    
+    
+    
+            <div class="movie-item">
+                <img src="photos/movies/baahubali-2.jpg" alt="baahubali-2" width="60px">
+                <h5 style="display: inline-block;">2.Baahubali-The Conclusion</h5>
+                <a href="https://www.imdb.com/title/tt4849438/?ref_=fn_al_tt_1">IMDB</a>
+                <button type="button" class="btn btn-outline-primary add-button" onclick="addToList(this.value)" value="MOVIES/Baahubali-The Conclusion">ADD TO LIST</button>
+            </div>
+            <div class="movie-item">
+                <img src="photos/movies/gladiator.jpg" alt="gladiator" width="60px">
+                <h5 style="display: inline-block;">3.Gladiator</h5>
+                <a href="https://www.imdb.com/title/tt0172495/">IMDB</a>
+                <button type="button" class="btn btn-outline-primary add-button" onclick="addToList(this.value)" value="MOVIES/Gladiator">ADD TO LIST</button>
+    
+            </div>
+            <div class="movie-item">
+                <img src="photos/movies/lordofrings.jpg" alt="Lordofrings" width="60px">
+                <h5 style="display: inline-block;">4.The Lord of the Rings: The Return of the King</h5>
+                <a href="https://www.imdb.com/title/tt0167260/?ref_=tt_sims_tt">IMDB</a>
+                <button type="button" class="btn btn-outline-primary add-button" onclick="addToList(this.value)" value="MOVIES/The Lord of the Rings: The Return of the King">ADD TO LIST</button>
+            </div>
+            <div class="movie-item">
+                <img src="photos/movies/The Lord of the Rings The Two Towers.jpg" alt="The Lord of the Rings: The Two Towers" width="60px">
+                <h5 style="display: inline-block;">5.The Lord of the Rings: The Two Towers</h5>
+                <a href="https://www.imdb.com/title/tt0167261/?ref_=tt_sims_tt">IMDB</a>
+                <button type="button" class="btn btn-outline-primary add-button" onclick="addToList(this.value)" value="MOVIES/The Lord of the Rings: The Two Towers">ADD TO LIST</button>
+    
+            </div>
+            <div class="movie-item">
+                <img src="photos/movies/The Lord of the Rings The Fellowship of the Ring.jpg" alt="The Lord of the Rings: The Fellowship of the Ring" width="60px">
+                <h5 style="display: inline-block;">6.The Lord of the Rings: The Fellowship of the Ring</h5>
+                <a href="https://www.imdb.com/title/tt0120737/?ref_=tt_sims_tt">IMDB</a>
+                <button type="button" class="btn btn-outline-primary add-button" onclick="addToList(this.value)" value="MOVIES/The Lord of the Rings: The Fellowship of the Ring">ADD TO LIST</button>
+    
+            </div>
+        </div>
+        <div id="s1">
+            <h1>Popular Series</h1>
+            <div class="series-item">
+                <img src="photos/series/Game of Thrones.jpg" alt="Game of Thrones " width="60px">
+                <h5 style="display: inline-block;">1.Game of Thrones </h5>
+                <a href="https://www.imdb.com/title/tt0944947/?ref_=fn_al_tt_1">IMDB</a>
+                <button type="button" class="btn btn-outline-primary add-button" onclick="addToList(this.value)" value="SERIES/Game of Thrones">ADD TO LIST</button>
+
+            </div>
+            <div class="series-item">
+                <img src="photos/series/Vikings.jpg" alt="Vikings " width="60px">
+                <h5 style="display: inline-block;">2.Vikings </h5>
+                <a href="https://www.imdb.com/title/tt2306299/?ref_=tt_sims_tt">IMDB</a>
+                <button type="button" class="btn btn-outline-primary add-button" onclick="addToList(this.value)" value="SERIES/Vikings">ADD TO LIST</button>
+
+            </div>
+            <div class="series-item">
+                <img src="photos/series/The Witcher.jpg" alt="The Witcher" width="60px">
+                <h5 style="display: inline-block;">3.The Witcher</h5>
+                <a href="https://www.imdb.com/title/tt5180504/?ref_=tt_sims_tt">IMDB</a>
+                <button type="button" class="btn btn-outline-primary add-button" onclick="addToList(this.value)" value="SERIES/The Witcher">ADD TO LIST</button>
+
+            </div>
+            <div class="series-item">
+                <img src="photos/series/Spartacus.jpg" alt="Spartacus" width="60px">
+                <h5 style="display: inline-block;">4.Spartacus</h5>
+                <a href="https://www.imdb.com/title/tt1442449/?ref_=fn_al_tt_1">IMDB</a>
+                <button type="button" class="btn btn-outline-primary add-button" onclick="addToList(this.value)" value="SERIES/Spartacus">ADD TO LIST</button>
+
+            </div>
+            <div class="series-item">
+                <img src="photos/series/The Last Kingdom.jpg" alt="The Last Kingdom" width="60px">
+                <h5 style="display: inline-block;">5.The Last Kingdom</h5>
+                <a href="https://www.imdb.com/title/tt4179452/?ref_=tt_sims_tt">IMDB</a>
+                <button type="button" class="btn btn-outline-primary add-button" onclick="addToList(this.value)" value="SERIES/The Last Kingdom">ADD TO LIST</button>
+
+            </div>
+        </div>
+        <div id="b1">
+            <h1>Popular Books</h1>
+            <div class="book-item">
+                <img src="photos/books/Mahabharat.jpg" alt="Mahabharat" width="60px">
+                <h5 style="display: inline-block;">1.Mahabharat</h5>
+                <a href="https://www.goodreads.com/book/show/27303747-mahabharat?ac=1&from_search=true&qid=iRMoKM1gOE&rank=4">Goodreads</a>
+                <button type="button" class="btn btn-outline-primary add-button" onclick="addToList(this.value)" value="BOOK/Mahabharat">ADD TO LIST</button>
+
+            </div>
+            <div class="book-item">
+                <img src="photos/books/Ramayana.jpg" alt="Ramayana" width="60px">
+                <h5 style="display: inline-block;">2.Ramayana</h5>
+                <a href="https://www.goodreads.com/book/show/141152.Ramayana?ac=1&from_search=true&qid=BMoC8BosnH&rank=1">Goodreads</a>
+                <button type="button" class="btn btn-outline-primary add-button" onclick="addToList(this.value)" value="BOOK/Ramayana">ADD TO LIST</button>
+
+            </div>
+            <div class="book-item">
+                <img src="photos/books/The Lord of the Rings.jpg" alt="The Lord of the Rings" width="60px">
+                <h5 style="display: inline-block;">3.The Lord of the Rings</h5>
+                <a href="https://www.goodreads.com/book/show/33.The_Lord_of_the_Rings">Goodreads</a>
+                <button type="button" class="btn btn-outline-primary add-button" onclick="addToList(this.value)" value="BOOK/The Lord of the Rings">ADD TO LIST</button>
+
+            </div>
+            <div class="book-item">
+                <img src="photos/books/A Storm of Swords.jpg" alt="A Storm of Swords" width="60px">
+                <h5 style="display: inline-block;">4.A Storm of Swords</h5>
+                <a href="https://www.goodreads.com/book/show/62291.A_Storm_of_Swords">Goodreads</a>
+                <button type="button" class="btn btn-outline-primary add-button" onclick="addToList(this.value)" value="BOOK/A Storm of Swords">ADD TO LIST</button>
+
+            </div>
+            <div class="book-item">
+                <img src="photos/books/A Clash of Kings.jpg" alt="A Clash of Kings" width="60px">
+                <h5 style="display: inline-block;">5.A Clash of Kings</h5>
+                <a href="https://www.goodreads.com/book/show/10572.A_Clash_of_Kings">Goodreads</a>
+                <button type="button" class="btn btn-outline-primary add-button" onclick="addToList(this.value)" value="BOOK/A Clash of Kings">ADD TO LIST</button>
+
+            </div>
+        </div>
+        <script src="code.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    </body>
+</html>
